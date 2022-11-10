@@ -5,118 +5,128 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфоліо</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header>
         <!-- Панель навігації -->
         <nav>
-            <a href="/goit-markup-hw-02/index.html" lang="en">Web<span>Studio</span></a>
+            <a href="./index.html" lang="en" class="logo">Web<span class="logo-header">Studio</span></a>
             <ul>
                 <li>
-                    <a href="/goit-markup-hw-02/index.html">Студія</a>
+                    <a class="nav-link" href="./index.html">Студія</a>
                 </li>
                 <li>
-                    <a href="/goit-markup-hw-02/portfolio.html">Портфоліо</a>
+                    <a class="nav-link current" href="./portfolio.html">Портфоліо</a>
                 </li>
                 <li>
-                    <a href="#">Контакти</a>
+                    <a class="nav-link" href="#">Контакти</a>
                 </li>
             </ul>
         </nav>
         <!-- Список контактів -->
         <ul>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li><a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="contact-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
     </header>
     <main>
-        <!-- Секція фільтра -->
-        <section>
-            <h2>Фільтр (заголовок зробити непомітним на сторінці)</h2>
-            <ul>
-                <li>
-                    <p>Усі</p>
-                </li>
-                <li>
-                    <p>Веб-сайти</p>
-                </li>
-                <li>
-                    <p>Додатки</p>
-                </li>
-                <li>
-                    <p>Дизайн</p>
-                </li>
-                <li>
-                    <p>Маркетинг</p>
-                </li>
-            </ul>
-        </section>
         <!-- Перелік усіх робіт у портфоліо -->
-        <section>
-            <h1>Перелік робіт у портфоліо (заголовок зробити непомітним на сторінці)</h1>
+        <section>    
+                <ul>
+                    <li>
+                        <button type="button">Усі</button>
+                    </li>
+                    <li>
+                        <button type="button">Веб-сайти</button>
+                    </li>
+                    <li>
+                        <button type="button">Додатки</button>
+                    </li>
+                    <li>
+                        <button type="button">Дизайн</button>
+                    </li>
+                    <li>
+                        <button type="button">Маркетинг</button>
+                    </li>
+                </ul>
+            <h1 class="visually-hidden">Перелік робіт у портфоліо</h1>
             <ul>
                 <li>
-                    <a href="#"> <img src="/goit-markup-hw-02/images/portfolio-tehnohrjak.jpg" alt="" width="370"> </a>
+                    <a href="#"> <img src="./images/portfolio-tehnohrjak.jpg" alt="На екрані ноутбука сторінка сайту з фото трьох співробітників" width="370"> 
                     <h2>Технокряк</h2>
                     <p>Веб-сайт</p>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"> <img src="/goit-markup-hw-02/images/portfolio-bascketball-poster.jpg" alt="" width="370"> </a>
-                    <h2>Постер New Orlean vs Golden Star</h2>
+                    <a href="#"> <img src="./images/portfolio-bascketball-poster.jpg" alt="Двоє чоловіків грають у баскетбол" width="370"> 
+                    <h2>Постер <span lang="en">New Orlean vs Golden Star</span></h2>
                     <p>Дизайн</p>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"> <img src="/goit-markup-hw-02/images/portfolio-restaurant.jpg" alt="" width="370"> </a>
-                    <h2>Ресторан Seafood</h2>
+                    <a href="#"> <img src="./images/portfolio-restaurant.jpg" alt="Намальована риба з назвою ресторану" width="370"> 
+                    <h2>Ресторан <span lang="en">Seafood</span></h2>
                     <p>Додаток</p>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"> <img src="/goit-markup-hw-02/images/portfolio-prime-project.jpg" alt="" width="370"> </a>
-                    <h2>Проєкт Prime</h2>
+                    <a href="#"> <img src="./images/portfolio-prime-project.jpg" alt="Фото накладних навушників" width="370"> 
+                    <h2>Проєкт <span lang="en">Prime</span></h2>
                     <p>Маркетинг</p>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"> <img src="/goit-markup-hw-02/images/portfolio-boxes-project.jpg" alt="" width="370"> </a>
-                    <h2>Проєкт Boxes</h2>
+                    <a href="#"> <img src="./images/portfolio-boxes-project.jpg" alt="Дві коробки з надписами" width="370"> 
+                    <h2>Проєкт <span lang="en">Boxes</span></h2>
                     <p>Додаток</p>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"> <img src="/goit-markup-hw-02/images/portfolio-inspiration.jpg" alt="" width="370"> </a>
-                    <h2>Inspiration has no Borders</h2>
+                    <a href="#"> <img src="./images/portfolio-inspiration.jpg" alt="На екрані монітора сторінка сайту з мапою світу" width="370"> 
+                    <h2 lang="en">Inspiration has no Borders</h2>
                     <p>Веб-сайт</p>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"> <img src="/goit-markup-hw-02/images/portfolio-limited-edition.jpg" alt="" width="370"> </a>
-                    <h2>Видання Limited Edition</h2>
+                    <a href="#"> <img src="./images/portfolio-limited-edition.jpg" alt="Розворот журналу з фото та статтями" width="370"> 
+                    <h2>Видання <span lang="en">Limited Edition</span></h2>
                     <p>Дизайн</p>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"> <img src="/goit-markup-hw-02/images/portfolio-lab-project.jpg" alt="" width="370"> </a>
-                    <h2>Проєкт LAB</h2>
+                    <a href="#"> <img src="./images/portfolio-lab-project.jpg" alt="На мотузці ярлик з написами" width="370"> 
+                    <h2>Проєкт <span lang="en">LAB</span></h2>
                     <p>Маркетинг</p>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"> <img src="/goit-markup-hw-02/images/portfolio-business.jpg" alt="" width="370"> </a>
-                    <h2>Growing Business</h2>
+                    <a href="#"> <img src="./images/portfolio-business.jpg" alt="Фото ноутбука з руками людини над його клавіатурою" width="370"> 
+                    <h2 lang="en">Growing Business</h2>
                     <p>Додаток</p>
+                    </a>
                 </li>
             </ul>
         </section>
     </main>
-    <footer>
+    <footer class="footer-section">
         <!-- Лого, адреса та контакти -->
-        <a href="/goit-markup-hw-02/index.html" lang="en">Web<span>Studio</span></a>
+        <a href="./index.html" lang="en" class="logo">Web<span class="logo-footer">Studio</span></a>
         <address>
             <ul>
                 <li>
-                    <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow">м.
+                    <a class="contact-link-map" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow">м.
                             Київ, пр-т Лесі Українки, 26</a>
                 </li>
                 <li>
-                    <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <a class="contact-link-footer" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
                 <li>
-                    <a href="tel:+380961111111">+38 096 111 11 11</a>
+                    <a class="contact-link-footer" href="tel:+380961111111">+38 096 111 11 11</a>
                 </li>
             </ul>
         </address>
